@@ -14,6 +14,8 @@ Model 3: Bidirectional RNN
 
 Model 4: Encoder-Decoder RNN
 
+Model 5: Bidirectional encoder-decoder RNN with embedding inputs
+
 ## Install
 - Python 3.6
 - NumPy
