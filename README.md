@@ -3,6 +3,13 @@
 # Introduction
 In this notebook, we will build a deep neural network that functions as part of an end-to-end machine translation pipeline. The completed pipeline will accept English text as input and return the French translation.
 
+# Model
+We will examine the performance of four neural network architectures:
+Model 1: Simple RNN
+Model 2: RNN with Embedding
+Model 3: Bidirectional RNN
+Model 4: Encoder-Decoder RNN
+
 ## Install
 - Python 3.6
 - NumPy
