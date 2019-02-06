@@ -21,6 +21,7 @@ The Encoder-Decoder architecture with RNN has become an effective approach for N
 The architecture consists of two RNNs. The first RNN is called encoder which maps the input text representation sequence to a fixed-sized internal representation and then the second RNN, the decoder, maps the vector to the target text sequence. ([Seq2Seq Learning with Neural Networks](https://arxiv.org/pdf/1409.3215.pdf))
 
 Final model configuration:
+- Bidirectional LSTM Encoder-Decoder architecture
 - A 300-dimensional word embedding layer was used to represent the input words.
 - Softmax was used on the output layer.
 - The encoder and decoder models had a single layer with 300 units in each layer.
