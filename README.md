@@ -18,7 +18,7 @@ Model 5: Bidirectional Encoder-Decoder RNN with Embedding inputs
 
 ### Encoder-Decoder architecture
 The Encoder-Decoder architecture with RNN has become an effective approach for NMT and Seq2Seq prediction in general. The strength of the approach is its ability to learn the mapping from the input text to its associated output text. 
-The architecture consists of two RNNs. The first RNN is called encoder which maps the input text representation sequence to a fixed-sized internal representation and the second RNN, the decoder, then maps the vector to the target text sequence. [Seq2Seq Learning with Neural Networks](https://arxiv.org/pdf/1409.3215.pdf)
+The architecture consists of two RNNs. The first RNN is called encoder which maps the input text representation sequence to a fixed-sized internal representation and then the second RNN, the decoder, maps the vector to the target text sequence. ([Seq2Seq Learning with Neural Networks](https://arxiv.org/pdf/1409.3215.pdf))
 
 Final model configuration:
 - A 300-dimensional word embedding layer was used to represent the input words.
