@@ -16,14 +16,17 @@ Model 4: Encoder-Decoder RNN
 
 Model 5: Bidirectional Encoder-Decoder RNN with Embedding inputs
 
-## Encoder-decoder architecture
-The Encoder-Decoder architecture with recurrent neural networks has become an effective approach for neural machine translation and Seq2Seq prediction in general. The strength of the approach is its ability to learn the mapping from the input text to its associated output text. 
-The architecture consists of two RNNs. The first RNN is called `encoder`
-Its architecture typically consists of two recurrent neural networks (RNNs), one to consume the
-input text sequence and one to generate translated output text. NMT is often accompanied by an attention
-mechanism [2] which helps it cope effectively with long input sequences.
+### Encoder-Decoder architecture
+The Encoder-Decoder architecture with RNN has become an effective approach for NMT and Seq2Seq prediction in general. The strength of the approach is its ability to learn the mapping from the input text to its associated output text. 
+The architecture consists of two RNNs. The first RNN is called encoder which maps the input text representation sequence to a fixed-sized internal representation and the second RNN, the decoder, then maps the vector to the target text sequence. [Seq2Seq Learning with Neural Networks](https://arxiv.org/pdf/1409.3215.pdf)
 
-The key benefits of the approach are the ability to train a single end-to-end model directly on source and target sentences and the ability to handle variable length input and output sequences of text.
+Final model configuration:
+- A 300-dimensional word embedding layer was used to represent the input words.
+- Softmax was used on the output layer.
+- The encoder and decoder models had a single layer with 300 units in each layer.
+- The model was fit for 10 epochs where some learning rate decay was performed.
+- A batch-size of 1024 sequences was used during training.
+
 ## Install
 - Python 3.6
 - NumPy
