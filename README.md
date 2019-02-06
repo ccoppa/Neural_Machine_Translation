@@ -11,6 +11,7 @@ Model 1: Simple RNN
 Model 2: RNN with Embedding
 
 Model 3: Bidirectional RNN
+
 Model 4: Encoder-Decoder RNN
 
 ## Install
